@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flexible Popup with Dragging</title>
+<link rel="stylesheet" href="pop.css">
+</head>
+<body>
+
+<button onclick="openForm()">Course Name</button>
+
+<div id="myForm" class="form-popup">
+    <span class="close" onclick="closeForm()">&times;</span>
+    <form action="/submit" class="form-container">
+        <h2>Add Course Units</h2>
+
+        <label for="cc"><b>Course Code</b></label>
+        <input type="text" placeholder="Enter Course Code" name="cc" required>
+        
+        <label for="cu"><b>Course Unit</b></label>
+        <input type="text" placeholder="Course Unit Name" name="cu" required><br>
+
+        <label for="des"><b>Description</b></label>
+        <input type="text" placeholder="Enter Description" name="des" required><br>
+
+
+
+        <button type="submit" class="btn">Register</button>
+    </form>
+</div>
+
+<script>
+
+</script>
+
+</body>
+</html>
